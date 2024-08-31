@@ -1,6 +1,8 @@
 import {Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem} from "@nextui-org/react";
 import React from "react";
 import {Rubik} from "next/font/google";
+import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const tabs = [
     { href: "#", label: "Home" },
@@ -29,9 +31,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                     </Button>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button color="primary" onClick={toggleDarkMode}>
-                        {darkMode ? 'Light Mode' : 'Dark Mode'}
-                    </Button>
+                    <FontAwesomeIcon color="gray" icon={darkMode ? faSun : faMoon} onClick={toggleDarkMode} />
                 </NavbarItem>
             </NavbarContent>
         </Navbar>
