@@ -31,7 +31,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                     </Button>
                 </NavbarItem>
                 <NavbarItem>
-                    <FontAwesomeIcon color="gray" icon={darkMode ? faSun : faMoon} onClick={toggleDarkMode} />
+                    <FontAwesomeIcon icon={darkMode ? faSun : faMoon} onClick={toggleDarkMode} className="cursor-pointer text-gray-500" />
                 </NavbarItem>
             </NavbarContent>
         </Navbar>
