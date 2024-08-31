@@ -7,7 +7,8 @@ import {Rubik} from "next/font/google";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
-export const Footer = ({ darkMode }) => (
+export default function Footer({ darkMode }) {
+    return (
     <div className={`py-4 w-full text-center ${darkMode ? 'text-gray-400' : 'text-gray-600'} ${rubik.className}`}>
         <p>&copy; 2024 SkyTree Communication Limited | All Rights Reserved</p>
         <p>Designed/Developed by AkiChan & Sh1n3zZ with <FontAwesomeIcon icon={faHeart} /></p>
@@ -16,3 +17,4 @@ export const Footer = ({ darkMode }) => (
         <Link href="mailto:hello@skytr.ee" className={`text-gray-500 m-3`}><FontAwesomeIcon icon={faEnvelope} /></Link>
     </div>
 );
+}

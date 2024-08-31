@@ -14,9 +14,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faHeart} from "@fortawesome/free-solid-svg-icons";
-import {Footer} from "@/pages/component/Footer";
-import {Header} from "@/pages/component/Header";
-import {MainContent} from "@/pages/component/Mainpage";
+import Header from "@/pages/component/Header";
+import MainContent from "@/pages/component/Mainpage";
+import Footer from "@/pages/component/Footer";
 export default function Home() {
     const [darkMode, setDarkMode] = React.useState(false);
 
