@@ -19,7 +19,13 @@ export default function Footer({ darkMode }) {
             src={'/S_0001.jpg'}
             className={`${darkMode ? 'invisible' : 'visible'} fixed bottom-0 right-3 m-0`}
             width={50}
+            onClick={PlaySound}
             />
     </div>
 );
+}
+
+function PlaySound(){
+    var audio = new Audio('/sound.mp3');
+    audio.play();
 }
