@@ -10,7 +10,6 @@ const tabs = [
     { href: "#", label: "Contact" },
 ];
 
-
 export default function Header({ darkMode, toggleDarkMode }) {
     return (
         <Navbar isBordered>
