@@ -1,4 +1,4 @@
-import { Rubik, Open_Sans, Roboto } from "next/font/google";
+import { Rubik, Open_Sans, Roboto, Manrope } from "next/font/google";
 
 export const fontRubik = Rubik({
   subsets: ["latin"],
@@ -18,9 +18,8 @@ export const fontRoboto = Roboto({
   display: "swap",
 });
 
-
-
-export const fontRubikFallback = "sans-serif";
-export const fontOpenSansFallback = "Arial, sans-serif";
-export const fontRobotoFallback = "Helvetica, sans-serif";
+export const fontManrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+});
 
